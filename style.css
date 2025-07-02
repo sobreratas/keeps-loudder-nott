@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Oxanium:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.logo-bar {
+  background-color: rgb(34, 34, 34);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo-bar img {
+  z-index: 5;
+  width: 500px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  text-transform: uppercase;
+}
+
+.navbar ul li {
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  display: block;
+}
+
+.navbar ul li:hover > ul {
+  display: block;
+}
+
+/* Dropdown Menu */
+.navbar ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  min-width: 150px;
+  z-index: 999;
+}
+
+.navbar ul li ul li a {
+  padding: 0.5rem 1rem;
+}
+
+.navbar ul li ul li a:hover {
+  background-color: #555;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Header Styles */
+#header-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-background {
+  flex: 1;
+  background-image: url("images/header.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.overlay-logo {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 300px;
+}
+
+/* Social Media Styles */
+#social-media-section {
+  height: 100vh;
+  background-image: url("images/social-media.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.social-media-card-container {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-media-card-container div {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Merch Styles */
+#merch-section {
+  height: 100vh;
+  background-image: url("images/merch.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.merch-title {
+  width: 20%;
+  margin: 20px 0;
+}
+
+.merch-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+.merch-card {
+  flex-basis: 25%;
+  position: relative;
+  border: 8px solid;
+  border-radius: 62px;
+  height: 100%;
+}
+
+.merch-card img {
+  height: 100%;
+  width: 100%;
+}
+
+.merch-label {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  width: 60%;
+}
+
+.merch-card:nth-child(1) {
+  border: 8px solid rgb(193, 214, 232);
+}
+
+.merch-card:nth-child(2) {
+  border: 8px solid rgb(239, 218, 178);
+}
+
+.merch-card:nth-child(3) {
+  border: 8px solid rgb(223, 131, 67);
+}
+
+.merch-card:nth-child(4) {
+  border: 8px solid rgb(193, 214, 232);
+}
+
+/* Stories Styles */
+#stories-section {
+  height: 100vh;
+}
+
+.stories-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url("images/stories.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.stories-top-container {
+  background-color: rgb(193, 214, 232);
+  color: rgb(37, 81, 143);
+  text-align: center;
+  padding: 1rem;
+}
+
+.stories-top-container h2 {
+  font-size: 3.5rem;
+  margin: 20px 0;
+}
+
+.stories-top-container p {
+  line-height: 1.4;
+  font-size: 1.5rem;
+}
+
+.stories-top-container button {
+  background-color: rgb(37, 81, 143);
+  border: none;
+  padding: 1rem;
+  color: #fff;
+  margin: 10px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+}
+
+.stories-bottom-container {
+  background-image: url("images/stories.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.stories-bottom-container img {
+  width: 60%;
+}
+
+/* Workshop Styles */
+#workshop-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#workshop-section h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.workshop-card-container {
+  display: flex;
+  width: 100%;
+}
+
+.workshop-card {
+  flex-basis: 50%;
+  padding: 3rem;
+}
+
+.workshop-card img {
+  width: 100%;
+}
+
+.workshop-card p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+#about-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/about.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  align-items: center;
+  gap: 20px;
+}
+
+#about-section h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#about-section p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#about-section button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-radius: 12px;
+  width: 300px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 30px 0;
+  font-size: 0.7rem;
+  background-color: rgb(34, 34, 34);
+  color: #fff;
+}
+
+footer img {
+  width: 200px;
+}
+
+.social-icons i {
+  color: #ffffff;
+  font-size: 26px;
+  margin: 0 8px;
+  transition: transform 0.5s;
+}
+
+.social-icons i:hover {
+  color: rgb(228, 228, 228);
+  transform: translateY(-5px);
+}
+
+.copyright-container {
+  text-align: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .logo-bar {
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-bar img {
+    width: 250px;
+  }
+
+  .navbar {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navbar ul.show {
+    display: flex;
+    z-index: 55;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar ul li ul {
+    position: static;
+  }
+
+  .navbar ul li:hover > ul {
+    display: none;
+  }
+
+  .navbar ul li.active > ul {
+    display: block;
+  }
+
+  #header-section {
+    background-attachment: scroll;
+  }
+
+  .overlay-logo {
+    display: none;
+  }
+
+  #social-media-section {
+    height: 100%;
+    background-image: url("images/pexels-thebongparenting-13997630\ \(1\).jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .social-media-card-container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .social-media-card-container div {
+    flex-basis: 100%;
+  }
+
+  #merch-section {
+    height: 100%;
+  }
+
+  .merch-card-container {
+    flex-wrap: wrap;
+  }
+
+  .merch-card {
+    flex-basis: 100%;
+  }
+
+  .merch-title {
+    width: 70%;
+  }
+
+  .stories-bottom-container {
+    height: 100%;
+  }
+
+  .stories-bottom-container {
+    background-attachment: scroll;
+  }
+
+  .stories-bottom-container img {
+    width: 95%;
+  }
+
+  #workshop-section {
+    height: 100%;
+  }
+
+  .workshop-card-container {
+    flex-wrap: wrap;
+  }
+
+  .workshop-card {
+    flex-basis: 100%;
+  }
+
+  #about-section {
+    background-attachment: scroll;
+    padding: 1rem;
+  }
+}
