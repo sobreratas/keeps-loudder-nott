@@ -468,6 +468,10 @@ footer img {
     width: 70%;
   }
 
+  .stories-wrapper {
+    height: 100%;
+  }
+
   .stories-bottom-container {
     height: 100%;
   }
