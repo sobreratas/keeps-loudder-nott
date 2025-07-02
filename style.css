@@ -430,7 +430,7 @@ footer img {
     display: block;
   }
 
-  #header-section {
+  .header-background {
     background-attachment: scroll;
   }
 
@@ -439,17 +439,7 @@ footer img {
   }
 
   #social-media-section {
-    height: 100%;
-    background-image: url("images/pexels-thebongparenting-13997630\ \(1\).jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: scroll;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
   }
 
   .social-media-card-container {
