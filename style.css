@@ -104,6 +104,24 @@ body {
   width: 25px;
   height: 3px;
   background-color: white;
+  border-radius: 6px;
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:nth-child(1) {
+  transform: translateY(6px) rotate(45deg) translateX(0px);
+  transition: transform 0.3s;
+  background-color: #fff;
+}
+
+.hamburger.active div:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+  transition: transform 0.3s;
+  background-color: #fff;
+
 }
 
 /* Header Styles */
@@ -528,6 +546,7 @@ footer img {
 
   .stories-bottom-container img {
     width: 95%;
+    margin-bottom: 2rem;
   }
 
   /* Workshop Mobile Styles */

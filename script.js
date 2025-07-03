@@ -3,8 +3,7 @@ const navLinks = document.getElementById("nav-links");
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("show");
-  console.log("worked")
-  console.log(navLinks.classList)
+  hamburger.classList.toggle("active");
 });
 
 // Handle dropdowns on mobile
