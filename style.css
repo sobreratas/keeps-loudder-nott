@@ -208,7 +208,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -489,6 +489,11 @@ footer img {
   }
 
   /* Header Mobile Styles */
+  #header-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
 
   .header-background {
     background-attachment: scroll;
@@ -506,12 +511,13 @@ footer img {
     height: 500px;
     width: 1000px;
   }
-  
+
   /* Social Media Mobile Styles */
 
   #social-media-section {
     background-attachment: scroll;
     height: 100%;
+    padding: 2rem 1rem;
   }
 
   .social-media-card-container {
@@ -527,6 +533,7 @@ footer img {
 
   #merch-section {
     height: 100%;
+    background-attachment: scroll;
   }
 
   .merch-card-container {
@@ -545,6 +552,10 @@ footer img {
 
   .stories-wrapper {
     height: 100%;
+  }
+
+  .stories-top-container p {
+    text-align: left;
   }
 
   .stories-bottom-container {
@@ -580,6 +591,7 @@ footer img {
 
   .workshop-card {
     flex-basis: 100%;
+    padding: 2rem;
   }
 
   /* About Mobile Styles */
