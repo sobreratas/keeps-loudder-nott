@@ -121,7 +121,6 @@ body {
   transform: translateY(-10px) rotate(-45deg);
   transition: transform 0.3s;
   background-color: #fff;
-
 }
 
 /* Header Styles */
@@ -339,6 +338,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  padding: 4rem;
 }
 
 #workshop-section h2 {
@@ -498,11 +498,15 @@ footer img {
     display: none;
   }
 
-  .cloud img {
-    height: 500px;
-    width: 700px;
+  .cloud {
+    width: 200%;
   }
 
+  .cloud img {
+    height: 500px;
+    width: 1000px;
+  }
+  
   /* Social Media Mobile Styles */
 
   #social-media-section {
@@ -544,7 +548,7 @@ footer img {
   }
 
   .stories-bottom-container {
-     display: none;
+    display: none;
   }
 
   .stories-bottom-container img {
@@ -553,19 +557,20 @@ footer img {
   }
 
   .stories-mobile-only {
-  display: block;
-  width: 100%;
-  margin-top: 2rem;
-}
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+  }
 
   /* Workshop Mobile Styles */
 
   #workshop-section {
     height: 100%;
     margin-top: 2rem;
+    padding: 0;
   }
 
-   #workshop-section h2{
+  #workshop-section h2 {
     margin-top: 4rem;
   }
 
