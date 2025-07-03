@@ -490,7 +490,7 @@ footer img {
 
   /* Header Mobile Styles */
   #header-section {
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
   }
