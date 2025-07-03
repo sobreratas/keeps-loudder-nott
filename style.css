@@ -330,6 +330,10 @@ body {
   width: 60%;
 }
 
+.stories-mobile-only {
+  display: none;
+}
+
 /* Workshop Styles */
 #workshop-section {
   height: 100vh;
@@ -540,20 +544,25 @@ footer img {
   }
 
   .stories-bottom-container {
-    background-image: none;
-    background-color: rgb(193, 214, 232);
+     display: none;
   }
 
   .stories-bottom-container img {
-    width: 95%;
+    display: none;
     /* margin-bottom: 2rem; */
   }
+
+  .stories-mobile-only {
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+}
 
   /* Workshop Mobile Styles */
 
   #workshop-section {
     height: 100%;
-    margin-top: 8rem;
+    margin-top: 2rem;
   }
 
    #workshop-section h2{
