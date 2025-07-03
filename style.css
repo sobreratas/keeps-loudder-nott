@@ -556,6 +556,10 @@ footer img {
     margin-top: 8rem;
   }
 
+   #workshop-section h2{
+    margin-top: 4rem;
+  }
+
   .workshop-card-container {
     flex-wrap: wrap;
   }
